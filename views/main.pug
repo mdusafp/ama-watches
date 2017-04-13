@@ -1,0 +1,47 @@
+section#under-header.under
+  .container.text-center
+    h3= underHeader
+
+section#carousel
+  #amaCarousel.carousel.slide(data-ride='carousel', style='height: 90%')
+    ol.carousel-indicators
+      li(data-target='#amaCarousel', data-slide-to='0').active
+      li(data-target='#amaCarousel', data-slide-to='1')
+      li(data-target='#amaCarousel', data-slide-to='2')
+
+    .carousel-inner(role='listbox', style='height: 100%')
+      .item.active
+        img.img-responsive(src='/img/firstWatch.jpg')
+        .carousel-caption
+          h3 Beauty wrist watches
+      .item
+        img.img-responsive(src='/img/secondWatch.jpg')
+        .carousel-caption
+          h3 You never regret buying them
+      .item
+        img.img-responsive(src='./img/firstWatch.jpg')
+        .carousel-caption
+          h3 This watch makes your world better
+    a.left.carousel-control(href='#amaCarousel', role='button', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+      span.sr-only Previous
+    a.right.carousel-control(href='#amaCarousel', role='button', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+      span.sr-only Next
+
+section#under-slider.under
+  .container.text-center
+    h3= underSlider
+
+section#best-watches
+  .container.text-center
+    .row
+      .col-sm-4
+        img.img-circle.img-responsive(src='/img/circleWatch.jpg', style='width: 100%')
+        p Best watch when you either seen
+      .col-sm-4
+        img.img-circle.img-responsive(src='/img/circleWatch1.jpg', style='width: 100%')
+        p Now you every gentleman wears them
+      .col-sm-4
+        img.img-circle.img-responsive(src='/img/circleWatch2.jpg', style='width: 100%')
+        p This model most popular in China and will become in Europe soon

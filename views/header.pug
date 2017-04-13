@@ -1,0 +1,18 @@
+header#header
+  nav.navbar.navbar-inverse.navbar-fixed-top
+    .container-fluid
+      .navbar-header
+        button(type='button', data-toggle='collapse', data-target='#amaHeader').navbar-toggle
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a(href='#').navbar-brand
+          img.img-responsive(src='/img/logo.png', alt='no logo', style='width: 13%')
+      #amaHeader.collapse.navbar-collapse.navbar-right
+        ul.nav.navbar-nav
+          li.active: a(href='#amaHeader', style='line-height: 300%') Home
+          li:        a(href='#best-watches', style='line-height: 300%') Watches
+          li:        a(href='#contacts', style='line-height: 300%') Contacts
+          //li
+            form
+              input(type='search', placeholder='search watches', name='search', style='margin-top: 20px')
