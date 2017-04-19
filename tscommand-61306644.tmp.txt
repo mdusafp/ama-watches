@@ -1,0 +1,1 @@
+src/routes/index.ts src/routes/route.ts src/server.ts src/.baseDir.ts --removeComments --target ES6 --module commonjs --outDir ./dist

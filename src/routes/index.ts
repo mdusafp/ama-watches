@@ -25,7 +25,7 @@ export class IndexRoute extends BaseRoute {
       'contacts': {
         'name': 'Misha',
         'phone': '+7(999)167-23-22',
-        'email': 'AbramSeller@outlow.com'
+        'email': 'AbramSeller@outlow.com',
       }
     };
 

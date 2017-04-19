@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700');
+
+$primaryColor: #101010;
+$secondaryColor: #dec159;
+
+#header {
+  .navbar-default.navbar-fixed-top {
+    background-color: $primaryColor;
+    border-bottom: 1px solid $secondaryColor;
+    .navbar-brand {
+      background-size: cover;
+      width: 80px;
+      img.logo {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//.about-slider {
+//  box-shadow: 0 0 20px $primaryColor;
+//}

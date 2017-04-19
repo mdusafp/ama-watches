@@ -33,14 +33,28 @@ module.exports = function(grunt) {
         }
       }
     },
+    sass: {
+      dist: {
+        files: [{
+          expand: true,
+          src: ['./\*\*/\*.scss'],
+          dest: './public/css',
+          ext: '.css'
+        }]
+      }
+    },
     watch: {
       ts: {
         files: ["src/\*\*/\*.ts"],
         tasks: ["ts"]
       },
       views: {
-        files: ["views/**/*.pug"],
+        files: ["views/**/*.pug", 'public/css/*.css'],
         tasks: ["copy"]
+      },
+      styles: {
+        files: ['assets/\*\*/\*.scss'],
+        tasks: ['sass']
       }
     }
   });
@@ -48,8 +62,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-ts");
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask("default", [
+    'sass',
     "copy",
     "ts"
   ]);

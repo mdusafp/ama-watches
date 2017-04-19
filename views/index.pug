@@ -1,16 +1,46 @@
 html
   head
     title= title
+
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/css/style.css')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-  body
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    // favicon
+    link(rel='icon', href='/img/logo.ico')
+
+    // CSS
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,300,700')
+    link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+
+    <!-- CSS -->
+
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/css/owl.carousel.css')
+    link(rel='stylesheet', href='/css/animate.css')
+    link(rel='stylesheet', href='/css/main.css')
+    link(rel='stylesheet', href='/css/assets/styles/style.css')
+
+    link(rel='stylesheet', href='/css/responsive.css')
+  body#body
     include header
 
     include main
 
     include footer
+
+    <!-- JS -->
+    script(src='/js/vendor/modernizr-2.6.2.min.js')
+    script(src='/js/vendor/jquery-1.10.2.min.js')
+    script(src='https://maps.googleapis.com/maps/api/js?sensor=false')
+    script(src='/js/jquery.lwtCountdown-1.0.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/owl.carousel.min.js')
+    script(src='/js/jquery.validate.min.js')
+    script(src='/js/jquery.form.js')
+    script(src='/js/jquery.nav.js')
+    script(src='/js/jquery.sticky.js')
+    script(src='/js/plugins.js')
+    script(src='/js/wow.min.js')
+    script(src='/js/main.js')

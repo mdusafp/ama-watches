@@ -1,47 +1,132 @@
-section#under-header.under
-  .container.text-center
-    h3= underHeader
+section#hero-area
+  div.container
+    div.row
+      div.col-md-6
+        div.block
+          h1.wow.fadeInDown Почувствуй стиль с совершенным дизайном своих часов!
+          p.wow.fadeInDown(data-wow-delay='0.3s').
+            Изысканные часы из новой коллекции со скидкой 50%
+          div.wow.fadeInDown(data-wow-delay='0.3s')
+            a.btn.btn-default.btn-home(href='#about', role='button') Заказать!
 
-section#carousel
-  #amaCarousel.carousel.slide(data-ride='carousel', style='height: 90%')
-    ol.carousel-indicators
-      li(data-target='#amaCarousel', data-slide-to='0').active
-      li(data-target='#amaCarousel', data-slide-to='1')
-      li(data-target='#amaCarousel', data-slide-to='2')
+section#about.section
+  div.container
+    div.row
+      div.col-md-7.col-sm-12.wow.fadeInLeft
+        div.sub-heading
+          h3.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Magnam ipsa recusandae consequatur veniam, reiciendis odit quia eaque vel eius a
+        div.block
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ulla-mco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, aspernatur.
 
-    .carousel-inner(role='listbox', style='height: 100%')
-      .item.active
-        img.img-responsive(src='/img/firstWatch.jpg')
-        .carousel-caption
-          h3 Beauty wrist watches
-      .item
-        img.img-responsive(src='/img/secondWatch.jpg')
-        .carousel-caption
-          h3 You never regret buying them
-      .item
-        img.img-responsive(src='./img/firstWatch.jpg')
-        .carousel-caption
-          h3 This watch makes your world better
-    a.left.carousel-control(href='#amaCarousel', role='button', data-slide='prev')
-      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-      span.sr-only Previous
-    a.right.carousel-control(href='#amaCarousel', role='button', data-slide='next')
-      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-      span.sr-only Next
+      div.col-md-5.col-sm-12.wow.fadeInLeft(data-wow-delay='0.s')
+        div.about-slider
+          div.init-slider
+            div.item
+              img(src='../img/watch/1.jpg', alt='photo')
+            div.item
+              img(src='../img/watch/2.jpg', alt='photo')
+            div.item
+              img(src='../img/watch/3.jpg', alt='photo')
 
-section#under-slider.under
-  .container.text-center
-    h3= underSlider
+section#service.section
+  div.container
+    div.row
+      div.heading.wow.fadeInUp
+        h2 Our service
+        p.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
 
-section#best-watches
-  .container.text-center
-    .row
-      .col-sm-4
-        img.img-circle.img-responsive(src='/img/circleWatch.jpg', style='width: 100%')
-        p Best watch when you either seen
-      .col-sm-4
-        img.img-circle.img-responsive(src='/img/circleWatch1.jpg', style='width: 100%')
-        p Now you every gentleman wears them
-      .col-sm-4
-        img.img-circle.img-responsive(src='/img/circleWatch2.jpg', style='width: 100%')
-        p This model most popular in China and will become in Europe soon
+      div.col-sm-6.col-md-4.wow.fadeInLeft
+        div.service
+          div.icon-box
+            span.icon
+              i.ion-android-desktop
+          div.caption
+            h3 Современность
+            p.
+              Вы можете заказать стильные часы прямо из дома
+      div.col-sm-6-.col-md-4.wow.fadeInLeft(data-wow-delay='0.3s')
+        div.service
+          div.icon-box
+            span.icon
+              i.ion-speedometer
+          div.caption
+            h3 Доставка
+            p.
+              Доставим от 3-ех дней
+      div.col-sm-6.col-md-4.wow.fadeInLeft(data-wow-delay='0.6s')
+        div.service
+          div.icon-box
+            span.icon
+              i.ion-ios-infinite-outline
+          div.caption
+            h3 Работа
+            p.
+              Мы доступны 24/7
+
+section#call-to-action.section
+  div.container
+    div.row
+      div.col-md-12.wow.text-center
+        div.block
+          h2 Подписаться на уведомление
+          p Вы будете получать полезную информацию о новинках и скидках
+          div.form-group
+            input.form-control(type='text', placeholder='Введите вашу почту')
+            button.btn.btn-default.btn-submit(type='submit') Отправить
+
+section#contact.section
+  div.container
+    div.row
+      div.col-xs-12.col-sm-12.col-md-12
+        div.block
+          div.heading.wow.fadeInUp
+            h2 Закажи и получи
+            p.
+              Информация о заказе и получении
+      div.col-xs-12.col-sm-12.col-md-5.wow.fadeInUp
+        div.block.text-left
+          div.sub-heading
+            h4 Контакты
+            p.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Amet quos maxime voluptate doloribus, voluptatum nemo vel ipsa in eligendi,
+              ullam. Ducimus consequuntur labore error hic.
+          address.adress
+            hr
+            p Mikhail Abramenkov,<br> Moscow, Russia
+            hr
+            p E: &nbsp;@ama_watches_shop
+            p P: &nbsp;+7 999 856 96 76
+      div.col-xs-12.col-md-5.col-md-offset-1.wow.fadeInUp(data-wow-delay='0.3s')
+        div.form-group
+          form#contact-form(method='post', action='#')
+            div.input-field
+              input.form-control(type='text', placeholder='Ваше Имя', name='first_name')
+            div.input-field
+              input.form-control(type='text', placeholder='Ваша Фамилия', name='last_name')
+            div.input-field
+              input.form-control(type='email', placeholder='Ваша почта', name='email')
+            div.input-field
+              input.form-control(type='phone', placeholder='Ваш телефон', name='phone')
+            button.btn.btn-send(type='submit') Заказать
+
+          div#success
+            p Ваш заказ успешно принят
+          div#error
+            p.
+              Простите, но с вашим заказом произошла ошибка.
+              Отправьте повторно через несколько минут
+
+section.wow.fadeInUp
+  div.map-wrapper

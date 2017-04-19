@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,300,700");
+#header .navbar-default.navbar-fixed-top {
+  background-color: #101010;
+  border-bottom: 1px solid #dec159; }
+  #header .navbar-default.navbar-fixed-top .navbar-brand {
+    background-size: cover;
+    width: 80px; }
+    #header .navbar-default.navbar-fixed-top .navbar-brand img.logo {
+      width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
